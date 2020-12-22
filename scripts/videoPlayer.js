@@ -63,14 +63,14 @@ export const videoPlayerInit = () => {
     videoTimeTotal.textContent = `${addZero(minuteTotal)}:${addZero(secondTotal)}`
   })
 
-  // videoProgress.addEventListener('change', () => {
-  //   const duration = videoPlayer.duration
-  //   const value = videoProgress.value
+  videoProgress.addEventListener('change', () => {
+    const duration = videoPlayer.duration
+    const value = videoProgress.value
 
-  //   console.log(value);
+    console.log(value);
 
-  //   videoPlayer.currentTime = (value * duration) / 100
-  // })
+    videoPlayer.currentTime = (value * duration) / 100
+  })
 
 
 
